@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cuenta</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://kit.fontawesome.com/13122ef785.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="./img/logo128x128.png" type="image/png">
+	<meta name="theme-color" content="#180380">
+	<meta name="MobileOptimized" content="width">
+	<meta name="handheldFriendly" content="true">
+	<link rel="manifest" href="./manifest.json">
+</head>
+<body id="content">
+	<header>
+		<h1>Mi Cuenta <i class="far fa-credit-card"></i></h1>
+	</header>
+	<div class="tarjeta-contenedor">
+		<div class="tarjeta">
+			<div class="tarjeta-titulos">
+				<i class="fas fa-terminal"></i><a href="https://github.com/Choco1125" target="_blank">Choco</a>
+				<span>tarjeta</span><span class="tipo-terjeta"> débito</span>
+			</div>
+			<div class="chip">
+				<div class="chip-card"></div>
+			</div>
+			<div class="numeros">
+				<p>981125026293193949722</p>
+			</div>
+			<div class="usuario">
+				<span class="nombre">Sebastian osorio Cruz</span>
+				<i class="fas fa-code"></i>
+			</div>
+		</div>
+	</div>
+	<div class="info-cuenta">
+		<h3>SALDO</h3>
+		<div class="datos">
+			<p id="saldo">0</p>
+		</div>
+	</div>
+	<div class="ingresar-saldo hide" id="ingresar-saldo">
+		<p>Ingresar dinero</p>
+		<input type="tel" name="valor" id="valor" placeholder="Monto">
+		<a id="btn-agregar-dinero"><i class="fas fa-plus"></i></a>
+	</div>
+	<div class="ingresar-saldo hide" id="retirar-saldo">
+			<p>Retirar dinero</p>
+			<input type="tel" name="valor" id="valorRetirar" placeholder="Monto">
+			<a id="btn-retirar-dinero"><i class="fas fa-minus"></i></a>
+	</div>
+	<nav>
+		<ul>
+			<li id="vaciar"><i class="fas fa-dollar-sign"></i></li>
+			<li id="ingresar-saldo-btn"><i class="fas fa-arrow-up"></i></li>
+			<li id="retirar-saldo-btn"><i class="fas fa-arrow-down"></i></li>
+		</ul>
+	</nav>
+	<script src="js/app.js"></script>
+</body>
+</html>
